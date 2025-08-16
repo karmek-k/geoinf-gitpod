@@ -2,8 +2,8 @@ image: gitpod/workspace-full
 
 tasks:
   - init: pip install -r requirements.txt
-    command: jupyter notebook --ip=0.0.0.0 --no-browser --NotebookApp.token='' --NotebookApp.password=''
+    command: jupyter notebook notebooks/intro.ipynb --ip=0.0.0.0 --no-browser --NotebookApp.token='' --NotebookApp.password=''
 
 ports:
   - port: 8888
-    onOpen: open-browser
+    onOpen: open-preview
